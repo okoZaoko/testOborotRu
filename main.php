@@ -56,11 +56,11 @@ class FruitTree {
 
         $pears_wieght = rand(130, 170);
 
-        $total_apple_wieght = $total_apples * $apple_weight;
+        $total_apple_wieght = $total_apples * $apple_wieght;
 
         $total_pears_wieght = $total_pears * $pears_wieght;
 
-        $total_wieght = $total_apple_weight + $total_pears_wieght;
+        $total_wieght = $total_apple_wieght + $total_pears_wieght;
         
         echo "Общее кол-во собранных яблок и груш: " . $total_count . "\n";
         echo "Общий вес яблок и груш: ".$total_weight."\n";
