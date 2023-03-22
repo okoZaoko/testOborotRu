@@ -49,18 +49,40 @@ class FruitTree {
             $total_pears += $fruit_count;
           }
         }
+
+        $total_count=$total_apples+$total_pears;
         
-        echo "Total apples collected: " . $total_apples . "\n";
-        echo "Total pears collected: " . $total_pears . "\n";
+        echo "Общее кол-во собранных яблок и груш: " . $total_count . "\n";
         }
         }
         
         // example usage
         $collector = new FruitCollector();
-        $collector->addTree(1, 'apple', 50);
-        $collector->addTree(2, 'pear', 20);
-        $collector->addTree(3, 'apple', 40);
-        $collector->addTree(4, 'pear', 10);
+        $collector->addTree(1, 'apple', rand(40,50));
+        $collector->addTree(2, 'pear', rand(0,20));
+        $collector->addTree(3, 'apple', rand(40,50));
+        $collector->addTree(4, 'apple', rand(40,50));
+        $collector->addTree(5, 'apple', rand(40,50));
+        $collector->addTree(6, 'apple', rand(40,50));
+        $collector->addTree(7, 'apple', rand(40,50));
+        $collector->addTree(8, 'apple', rand(40,50));
+        $collector->addTree(9, 'apple', rand(40,50));
+        $collector->addTree(10, 'apple', rand(40,50));
+        $collector->addTree(11, 'pear', rand(0,20));
+        $collector->addTree(12, 'pear', rand(0,20));
+        $collector->addTree(13, 'pear', rand(0,20));
+        $collector->addTree(14, 'pear', rand(0,20));
+        $collector->addTree(15, 'pear', rand(0,20));
+        $collector->addTree(16, 'pear', rand(0,20));
+        $collector->addTree(17, 'pear', rand(0,20));
+        $collector->addTree(18, 'pear', rand(0,20));
+        $collector->addTree(19, 'pear', rand(0,20));
+        $collector->addTree(20, 'pear', rand(0,20));
+        $collector->addTree(21, 'pear', rand(0,20));
+        $collector->addTree(22, 'apple', rand(40,50));
+        $collector->addTree(23, 'pear', rand(0,20));
+        $collector->addTree(24, 'pear', rand(0,20));
+        $collector->addTree(25, 'pear', rand(0,20));
         $collector->collect();
         
         // expected output:
