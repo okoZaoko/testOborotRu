@@ -96,6 +96,4 @@ class FruitTree {
         $collector->addTree(25, 'pear', rand(0,20));
         $collector->collect();
         
-        // expected output:
-        // Total apples collected: 90
-        // Total pears collected: 30
+
