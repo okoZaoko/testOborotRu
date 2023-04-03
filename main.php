@@ -52,18 +52,7 @@ class FruitTree {
 
         $total_count=$total_apples+$total_pears;
         
-        $apple_wieght = rand(150, 180);
-
-        $pears_wieght = rand(130, 170);
-
-        $total_apple_wieght = $total_apples * $apple_wieght;
-
-        $total_pears_wieght = $total_pears * $pears_wieght;
-
-        $total_wieght = $total_apple_wieght + $total_pears_wieght;
-        
         echo "Общее кол-во собранных яблок и груш: " . $total_count . "\n";
-        echo "Общий вес яблок и груш: ".$total_weight."\n";
         }
         }
         
@@ -96,4 +85,6 @@ class FruitTree {
         $collector->addTree(25, 'pear', rand(0,20));
         $collector->collect();
         
-
+        // expected output:
+        // Total apples collected: 90
+        // Total pears collected: 30
